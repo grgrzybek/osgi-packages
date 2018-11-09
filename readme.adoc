@@ -1,0 +1,8 @@
+= OSGi package versions
+
+This document is inspired by https://docs.google.com/spreadsheets/d/1C3vC9YHzIxxs1yJvhlGqOr1Vn-SpByfp14MuwtFgqrE/edit#gid=0[OSGi specs]
+summary which shows matrix of OSGi releases and packages versions.
+
+See https://repo1.maven.org/maven2/org/osgi/.
+
+I want to collect all versioning information that spans Maven and OSGi worlds.

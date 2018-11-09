@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>OSGi package versions</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="bootstrap-4.1.3.css" crossorigin="anonymous" />
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />-->
+  <style type="text/css">
+    /*body { position: relative }*/
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function () {
+      let hidden = true;
+      $("#toggle").click(function () {
+        if (hidden) {
+          $(".feature").show();
+          hidden = false;
+          $("#toggle").prop('value', 'Hide details');
+        } else {
+          $(".feature").hide();
+          hidden = true;
+          $("#toggle").prop('value', 'Show details');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>OSGi packages</h1>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">package</th>
+        <th scope="col">version</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">org.osgi</th>
+        <td>1.0</td>
+      </tr>
+      <tr>
+        <th scope="row">org.osgi.dto</th>
+        <td>Jacob</td>
+      </tr>
+      <tr>
+        <th scope="row">org.osgi.framework</th>
+        <td>Larry</td>
+      </tr>
+      <tr>
+        <th scope="row">org.osgi.resource</th>
+        <td>Larry</td>
+      </tr>
+      <tr>
+        <th scope="row">org.osgi.service</th>
+        <td>Larry</td>
+      </tr>
+      <tr>
+        <th scope="row">org.osgi.util.tracker</th>
+        <td>Larry</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
