@@ -17,6 +17,8 @@
 # under the License.
 #
 
+# all OSGi Compendium Maven artifacts (groupId/artifactId/version) I've found in Maven Central
+
 org.osgi/osgi_R4_compendium/1.0
 org.osgi/org.osgi.compendium/4.0.0
 org.osgi/org.osgi.compendium/4.0.1

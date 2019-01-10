@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<!--
+    The information is extracted from specification documents from https://osgi.org site.
+    This file is *not* generated.
+    The information is intended to be merged/combined with the generated XMLs, related to content of OSGi
+    artifacts from Maven Central.
+-->
+<specifications xmlns="https://github.com/grgrzybek/osgi-packages/1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://github.com/grgrzybek/osgi-packages/1 osgi.specs.xsd">
+
+    <spec id="core">
+        <item number="4" title="Lifecycle Layer">
+            <description>Framework Specification (Lifecycle Layer) and Framework Launching</description>
+            <package ref-id="org.osgi.framework" />
+            <package ref-id="org.osgi.framework.launch" />
+        </item>
+        <item number="5" title="Service Layer">
+            <description>Framework Specification (Service Layer)</description>
+            <package ref-id="org.osgi.framework" />
+        </item>
+        <item number="6" title="Resource API Specification">
+            <description>API for the generic Requirement-Capability model</description>
+            <package id="org.osgi.resource">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+            </package>
+        </item>
+        <item number="7" title="Bundle Wiring API Specification">
+            <description>API to introspect the wiring between the requirements and capabilities of resolved bundles.</description>
+            <package id="org.osgi.framework.wiring">
+                <version id="1.2" spec="7.0.0" />
+                <version id="1.2" spec="6.0.0" />
+                <version id="1.1" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+            </package>
+        </item>
+        <item number="7" title="Package Admin Service Specification">
+            <description>The Package Admin service provides an interface to let the Management Agent make the decision regarding any shared packages when the exporting bundle is uninstalled or updated.</description>
+            <package id="org.osgi.service.packageadmin">
+                <version id="1.2" spec="4.2.0" />
+                <version id="1.2" spec="4.1.0" />
+                <version id="1.2" spec="4.0.1" />
+                <version id="1.2" spec="4.0.0" />
+                <version id="1.1" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.packageadmin` package is specified in chapter 5</note>
+                </version>
+                <version id="1.0" spec="2.0.0">
+                    <note>In 2.0.0 specification, `org.osgi.service.packageadmin` package is specified in chapter 3</note>
+                </version>
+            </package>
+            <notes>
+                <note>After 4.2.0 specification, `org.osgi.service.packageadmin` package is no longer specified</note>
+            </notes>
+        </item>
+        <item number="8" title="Framework Namespaces Specification">
+            <description>A Namespace defines the semantics of a Requirement-Capability pair.</description>
+            <package id="org.osgi.framework.namespace">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+            </package>
+        </item>
+        <item number="8" title="Start Level Service Specification">
+            <description>This specification describes how to enable a Management Agent to control the relative starting and stopping order of bundles in an OSGi Service Platform.</description>
+            <package id="org.osgi.service.startlevel">
+                <version id="1.1" spec="4.2.0" />
+                <version id="1.1" spec="4.1.0" />
+                <version id="1.0" spec="4.0.1" />
+                <version id="1.0" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.startlevel` package is specified in chapter 6</note>
+                </version>
+            </package>
+            <notes>
+                <note>After 4.2.0 specification, `org.osgi.service.startlevel` service functionality is moved to `org.osgi.framework.startlevel` API</note>
+            </notes>
+        </item>
+        <item number="9" title="Start Level API Specification">
+            <description>This specification describes how to enable a management agent to control the relative starting and stopping order of bundles in an OSGi framework.</description>
+            <package id="org.osgi.framework.startlevel">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0">
+                    <note>In 4.3.0 specification, `org.osgi.framework.startlevel` package is specified in chapter 8</note>
+                </version>
+            </package>
+        </item>
+        <item number="10" title="Framework API">
+            <description>Framework Specification (Lifecycle Layer and Service Layer), Framework Launching, OSGi Versioning Annotations Package, OSGi Bundle Annotations Package</description>
+            <package id="org.osgi.framework">
+                <version id="1.9" spec="7.0.0" />
+                <version id="1.8" spec="6.0.0" />
+                <version id="1.7" spec="5.0.0" />
+                <version id="1.6" spec="4.3.0" />
+                <version id="1.5" spec="4.2.0" />
+                <version id="1.4" spec="4.1.0" />
+                <version id="1.3" spec="4.0.1" />
+                <version id="1.3" spec="4.0.0" />
+                <version id="1.2" spec="3.0.0" />
+                <version id="1.1" spec="2.0.0" />
+            </package>
+            <package id="org.osgi.framework.launch">
+                <version id="1.2" spec="7.0.0" />
+                <version id="1.2" spec="6.0.0" />
+                <version id="1.1" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+            </package>
+            <package ref-id="org.osgi.resource" />
+            <package ref-id="org.osgi.framework.wiring" />
+            <package ref-id="org.osgi.framework.startlevel" />
+            <package ref-id="org.osgi.framework.namespace" />
+            <package id="org.osgi.annotation.versioning">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.annotation.bundle">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="24" title="Jini Driver Service Specification">
+            <description>This specification outlines the rules for using Jini in an OSGi Service Platform.</description>
+            <package id="org.osgi.service.jini">
+                <version id="1.0" spec="3.0.0" />
+            </package>
+        </item>
+        <item number="50" title="Conditional Permission Admin Service Specification">
+            <description>This specification adds several new features to the Java permission model to adapt it to the typical use cases of OSGi deployments.</description>
+            <package id="org.osgi.service.condpermadmin">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.1" spec="5.0.0" />
+                <version id="1.1" spec="4.3.0" />
+                <version id="1.1" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+                <version id="1.0" spec="4.0.1" />
+                <version id="1.0" spec="4.0.0" />
+            </package>
+            <notes>
+                <note>Until 4.2.0 specification, `org.osgi.service.condpermadmin` package is specified in chapter 9</note>
+            </notes>
+        </item>
+        <item number="51" title="Permission Admin Service Specification">
+            <description>Permission Admin service used to administrate the permissions of a bundle and provide defaults for all bundles.</description>
+            <package id="org.osgi.service.permissionadmin">
+                <version id="1.2" spec="7.0.0" />
+                <version id="1.2" spec="6.0.0" />
+                <version id="1.2" spec="5.0.0" />
+                <version id="1.2" spec="4.3.0" />
+                <version id="1.2" spec="4.2.0" />
+                <version id="1.2" spec="4.1.0" />
+                <version id="1.2" spec="4.0.1" />
+                <version id="1.2" spec="4.0.0" />
+                <version id="1.1" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.permissionadmin` package is specified in chapter 7</note>
+                </version>
+                <version id="1.0" spec="2.0.0">
+                    <note>In 2.0.0 specification, `org.osgi.service.permissionadmin` package is specified in chapter 4</note>
+                </version>
+            </package>
+            <notes>
+                <note>The Permission Admin has been superseded by the Conditional Permission Admin.</note>
+                <note>Until 4.2.0 specification, `org.osgi.service.permissionadmin` package is specified in chapter 10</note>
+            </notes>
+        </item>
+        <item number="52" title="URL Handlers Service Specification">
+            <description>This specification standardizes the mechanism to extend the Java runtime with new URL schemes and content handlers through bundles.</description>
+            <package id="org.osgi.service.url">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+                <version id="1.0" spec="4.0.1" />
+                <version id="1.0" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.url` package is specified in chapter 8</note>
+                </version>
+            </package>
+            <notes>
+                <note>Until 4.2.0 specification, `org.osgi.service.url` package is specified in chapter 11</note>
+            </notes>
+        </item>
+        <item number="53" title="Resolver Hook Service Specification">
+            <description>The module layer is responsible for the resolve operation that wires requirements (Import-Package, Require-Bundle etc.) to capabilities (Export-Package, Bundle-SymbolicName/Bundle-Version etc.).</description>
+            <package id="org.osgi.framework.hooks.resolver">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+            </package>
+        </item>
+        <item number="54" title="Bundle Hook Service Specification">
+            <description>Bundle Hook services allow Handlers to hide bundles from other bundles by filtering the Bundle Events and return values of methods that return bundles.</description>
+            <package id="org.osgi.framework.hooks.bundle">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.1" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+            </package>
+        </item>
+        <item number="55" title="Service Hook Service Specification">
+            <description>The service hooks provide a more symmetric model for service based programming that can act as a multiplier for the framework. The basic framework provides a powerful service engine and this specification allows a bundle to interact with this service engine.</description>
+            <package id="org.osgi.framework.hooks.service">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.1" spec="5.0.0" />
+                <version id="1.1" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+            </package>
+            <notes>
+                <note>In 4.2.0 specification, `org.osgi.framework.hooks.service` package is specified in chapter 12</note>
+            </notes>
+        </item>
+        <item number="56" title="Weaving Hook Service Specification">
+            <description>This specification provides a means for a handler bundle to intercept any bundle class loading calls in the framework, transform the byte codes, and add new dynamic imports.</description>
+            <package id="org.osgi.framework.hooks.weaving">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+            </package>
+        </item>
+        <item number="57" title="Data Transfer Objects Specification">
+            <description>This specification defines Data Transfer Objects for OSGi in general and well as specific Data Transfer Objects for the Core specification.</description>
+            <package id="org.osgi.dto">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.framework.dto">
+                <version id="1.1" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.framework.startlevel.dto">
+                <version id="1.1" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.framework.wiring.dto">
+                <version id="1.1" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.resource.dto">
+                <version id="1.1" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="58" title="Resolver Service Specification">
+            <description>The OSGi Resolver service is an essential part of a software model where applications are built out of independent components.</description>
+            <package id="org.osgi.service.resolver">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+            </package>
+            <notes>
+                <note>In 7.0.0, Resolver Service Specification was moved from OSGi Compendium, Chapter 136 to Core specification</note>
+            </notes>
+        </item>
+        <item number="701" title="Tracker Specification">
+            <description>This specification defines two utility classes, ServiceTracker and BundleTracker, that make tracking services and bundles easier.</description>
+            <package id="org.osgi.util.tracker">
+                <version id="1.5" spec="7.0.0" />
+                <version id="1.5" spec="6.0.0" />
+                <version id="1.5" spec="5.0.0" />
+                <version id="1.5" spec="4.3.0">
+                    <note>In 4.3.0 specification, `org.osgi.util.tracker` package is specified in chapter 701 of compendium specification</note>
+                </version>
+                <version id="1.4" spec="4.2.0">
+                    <note>In 4.2.0 specification, `org.osgi.util.tracker` package is specified in chapter 701 of compendium specification</note>
+                </version>
+                <version id="1.3" spec="4.1.0">
+                    <note>In 4.1.0 specification, `org.osgi.util.tracker` package is specified in chapter 701 of compendium specification</note>
+                </version>
+                <version id="1.3" spec="4.0.1">
+                    <note>In 4.0.1 specification, `org.osgi.util.tracker` package is specified in chapter 701 of compendium specification</note>
+                </version>
+                <version id="1.3" spec="4.0.0">
+                    <note>In 4.0.0 specification, `org.osgi.util.tracker` package is specified in chapter 701 of compendium specification</note>
+                </version>
+                <version id="1.2" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.util.tracker` package is specified in chapter 19</note>
+                </version>
+                <version id="1.1" spec="2.0.0">
+                    <note>In 2.0.0 specification, `org.osgi.util.tracker` package is specified in chapter 5</note>
+                </version>
+            </package>
+        </item>
+    </spec>
+
+    <spec id="compendium">
+        <item number="100" title="Remote Services">
+            <description>A distribution provider can use this loose coupling between bundles to export a registered service by creating an endpoint.</description>
+            <notes>
+                <note>In 4.2.0 Remote Services were specified in chapter 13</note>
+                <note>In 4.3.0 Remote Services were moved to core (but I wasn't able to find relevant chapter)</note>
+                <note>In 5.0.0 Remote Services are back to chapter 100 of compendium specification</note>
+                <note>This specification doesn't declare any packages</note>
+            </notes>
+        </item>
+        <item number="101" title="Log Service Specification">
+            <description>The Log Service provides a general purpose message logger for the OSGi Service Platform.</description>
+            <package id="org.osgi.service.log">
+                <version id="1.4" spec="7.0.0" />
+                <version id="1.3" spec="6.0.0" />
+                <version id="1.3" spec="5.0.0" />
+                <version id="1.3" spec="4.3.0" />
+                <version id="1.3" spec="4.2.0" />
+                <version id="1.3" spec="4.1.0" />
+                <version id="1.3" spec="4.0.1" />
+                <version id="1.3" spec="4.0.0" />
+                <version id="1.2" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.log` package is specified in chapter 9 of core specification</note>
+                </version>
+                <version id="1.1" spec="2.0.0">
+                    <note>In 2.0.0 specification, `org.osgi.service.log` package is specified in chapter 6 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="102" title="Http Service Specification">
+            <description>The Http Service supports techniques for registering servlets and registering resources.</description>
+            <package id="org.osgi.service.http">
+                <version id="1.2" spec="7.0.0" />
+                <version id="1.2" spec="6.0.0" />
+                <version id="1.2" spec="5.0.0" />
+                <version id="1.2" spec="4.3.0" />
+                <version id="1.2" spec="4.2.0" />
+                <version id="1.2" spec="4.1.0" />
+                <version id="1.2" spec="4.0.1" />
+                <version id="1.2" spec="4.0.0" />
+                <version id="1.1" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.http` package is specified in chapter 14 of core specification</note>
+                </version>
+                <version id="1.1" spec="2.0.0">
+                    <note>In 2.0.0 specification, `org.osgi.service.http` package is specified in chapter 7 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="103" title="Device Access Specification">
+            <description>The Device Access specification supports the coordination of automatic detection and attachment of existing devices on an OSGi Service Platform, facilitates hot-plugging and unplugging of new devices, and downloads and installs device drivers on demand.</description>
+            <package id="org.osgi.service.device">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.1" spec="5.0.0" />
+                <version id="1.1" spec="4.3.0" />
+                <version id="1.1" spec="4.2.0" />
+                <version id="1.1" spec="4.1.0" />
+                <version id="1.1" spec="4.0.1" />
+                <version id="1.1" spec="4.0.0" />
+                <version id="1.1" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.device` package is specified in chapter 11 of core specification</note>
+                </version>
+                <version id="1.1" spec="2.0.0">
+                    <note>In 2.0.0 specification, `org.osgi.service.device` package is specified in chapter 8 of core specification</note>
+                </version>
+            </package>
+            <notes>
+            </notes>
+        </item>
+        <item number="104" title="Configuration Admin Service Specification">
+            <description>The Configuration Admin service allows an Operator to set the configuration information of deployed bundles.</description>
+            <package id="org.osgi.service.cm">
+                <version id="1.6" spec="7.0.0" />
+                <version id="1.5" spec="6.0.0" />
+                <version id="1.5" spec="5.0.0" />
+                <version id="1.4" spec="4.3.0" />
+                <version id="1.3" spec="4.2.0" />
+                <version id="1.2" spec="4.1.0" />
+                <version id="1.2" spec="4.0.1" />
+                <version id="1.2" spec="4.0.0" />
+                <version id="1.1" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.cm` package is specified in chapter 10 of core specification</note>
+                </version>
+                <version id="1.0" spec="2.0.0">
+                    <note>In 2.0.0 specification, `org.osgi.service.cm` package is specified in chapter 9 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="105" title="Metatype Service Specification">
+            <description>The Metatype specification defines interfaces that allow bundle developers to describe attribute types in a computer readable form using so-called meta data.</description>
+            <package id="org.osgi.service.metatype">
+                <version id="1.4" spec="7.0.0" />
+                <version id="1.3" spec="6.0.0" />
+                <version id="1.2" spec="5.0.0" />
+                <version id="1.2" spec="4.3.0" />
+                <version id="1.1" spec="4.2.0" />
+                <version id="1.1" spec="4.1.0" />
+                <version id="1.1" spec="4.0.1" />
+                <version id="1.1" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.metatype` package is specified in chapter 18 of core specification</note>
+                </version>
+                <version id="1.0" spec="2.0.0">
+                    <note>In 2.0.0 specification, `org.osgi.service.metatype` package is specified in chapter 10 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="106" title="Preferences Service Specification">
+            <description>Preferences Service Specification is intended to replace java.util.Properties with a more sophisticated mechanism.</description>
+            <package id="org.osgi.service.prefs">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.1" spec="5.0.0" />
+                <version id="1.1" spec="4.3.0" />
+                <version id="1.1" spec="4.2.0" />
+                <version id="1.1" spec="4.1.0" />
+                <version id="1.1" spec="4.0.1" />
+                <version id="1.1" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.prefs` package is specified in chapter 15 of core specification</note>
+                </version>
+                <version id="1.0" spec="2.0.0">
+                    <note>In 2.0.0 specification, `org.osgi.service.prefs` package is specified in chapter 11 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="107" title="User Admin Service Specification">
+            <description>The User Admin service provides functionality to verify that a principal is authorized to perform the requested action.</description>
+            <package id="org.osgi.service.useradmin">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.1" spec="5.0.0" />
+                <version id="1.1" spec="4.3.0" />
+                <version id="1.1" spec="4.2.0" />
+                <version id="1.1" spec="4.1.0" />
+                <version id="1.1" spec="4.0.1" />
+                <version id="1.1" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.useradmin` package is specified in chapter 12 of core specification</note>
+                </version>
+                <version id="1.0" spec="2.0.0">
+                    <note>In 2.0.0 specification, `org.osgi.service.useradmin` package is specified in chapter 12 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="108" title="Wire Admin Service Specification">
+            <description>The Wire Admin service is an administrative service that is used to control a wiring topology in the OSGi Service Platform.</description>
+            <package id="org.osgi.service.wireadmin">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+                <version id="1.0" spec="4.0.1" />
+                <version id="1.0" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.wireadmin` package is specified in chapter 16 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="109" title="IO Connector Service Specification">
+            <description>IO Connector Service specification adopts the Java 2 Micro Edition (J2ME) javax.microedition.io packages as a basic communications infrastructure.</description>
+            <package id="org.osgi.service.io">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+                <version id="1.0" spec="4.0.1" />
+                <version id="1.0" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.io` package is specified in chapter 13 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="110" title="Initial Provisioning">
+            <description>This specification defines how the Management Agent can make its way to the Service Platform, and gives a structured view of the problems and their corresponding resolution methods.</description>
+            <package id="org.osgi.service.provisioning">
+                <version id="1.2" spec="7.0.0" />
+                <version id="1.2" spec="6.0.0" />
+                <version id="1.2" spec="5.0.0" />
+                <version id="1.2" spec="4.3.0" />
+                <version id="1.2" spec="4.2.0" />
+                <version id="1.1" spec="4.1.0" />
+                <version id="1.1" spec="4.0.1" />
+                <version id="1.1" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.provisioning` package is specified in chapter 26 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="111" title="UPnP Device Service Specification">
+            <description>This specification specifies how OSGi bundles can be developed that interoperate with UPnP™ (Universal Plug and Play) devices and UPnP control points.</description>
+            <package id="org.osgi.service.upnp">
+                <version id="1.2" spec="7.0.0" />
+                <version id="1.2" spec="6.0.0" />
+                <version id="1.2" spec="5.0.0" />
+                <version id="1.2" spec="4.3.0" />
+                <version id="1.1" spec="4.2.0" />
+                <version id="1.1" spec="4.1.0" />
+                <version id="1.1" spec="4.0.1" />
+                <version id="1.1" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.service.upnp` package is specified in chapter 25 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="112" title="Declarative Services Specification">
+            <description>The service component model uses a declarative model for publishing, finding and binding to OSGi services.</description>
+            <package id="org.osgi.service.component">
+                <version id="1.4" spec="7.0.0" />
+                <version id="1.3" spec="6.0.0" />
+                <version id="1.2" spec="5.0.0" />
+                <version id="1.2" spec="4.3.0" />
+                <version id="1.1" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+                <version id="1.0" spec="4.0.1" />
+                <version id="1.0" spec="4.0.0" />
+            </package>
+            <package id="org.osgi.service.component.annotation">
+                <version id="1.4" spec="7.0.0" />
+                <version id="1.3" spec="6.0.0" />
+                <version id="1.2" spec="5.0.0" />
+                <version id="1.2" spec="4.3.0" />
+            </package>
+            <package id="org.osgi.service.component.runtime">
+                <version id="1.4" spec="7.0.0" />
+                <version id="1.3" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.service.component.runtime.dto">
+                <version id="1.4" spec="7.0.0" />
+                <version id="1.3" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.service.component.propertytypes">
+                <version id="1.4" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="113" title="Event Admin Service Specification">
+            <description>The Event Admin service provides an inter-bundle communication mechanism.</description>
+            <package id="org.osgi.service.event">
+                <version id="1.4" spec="7.0.0" />
+                <version id="1.3" spec="6.0.0" />
+                <version id="1.3" spec="5.0.0" />
+                <version id="1.3" spec="4.3.0" />
+                <version id="1.2" spec="4.2.0" />
+                <version id="1.1" spec="4.1.0" />
+                <version id="1.1" spec="4.0.1" />
+                <version id="1.0" spec="4.0.0" />
+            </package>
+            <package id="org.osgi.service.event.annotations">
+                <version id="1.4" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.event.propertytypes">
+                <version id="1.4" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="114" title="Deployment Admin Specification">
+            <description>Deployment Admin service standardizes the access to some of the responsibilities of the management agent: that is, the lifecycle management of interlinked resources on an OSGi Service Platform.</description>
+            <package id="org.osgi.service.deploymentadmin">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.1" spec="5.0.0" />
+                <version id="1.1" spec="4.3.0" />
+                <version id="1.1" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+            </package>
+            <package id="org.osgi.service.deploymentadmin.spi">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+            </package>
+        </item>
+        <item number="115" title="Auto Configuration Specification">
+            <description>The purpose of the Auto Configuration specification is to allow the configuration of bundles.</description>
+            <notes>
+                <note>Auto Configuration is introduced in OSGi Compendium 4.1, but doesn't declare any packages.</note>
+            </notes>
+        </item>
+        <item number="116" title="Application Admin Service Specification">
+            <description>The OSGi Application Admin service is intended to simplify the management of an environment with many different types of applications that are simultaneously available.</description>
+            <package id="org.osgi.service.application">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.1" spec="5.0.0" />
+                <version id="1.1" spec="4.3.0" />
+                <version id="1.1" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+            </package>
+        </item>
+        <item number="117" title="DMT Admin Service Specification">
+            <description>This specification defines an API for managing a device using concepts from the OMA DM specifications.</description>
+            <package id="org.osgi.service.dmt">
+                <version id="2.0" spec="7.0.0" />
+                <version id="2.0" spec="6.0.0" />
+                <version id="2.0" spec="5.0.0" />
+                <version id="2.0" spec="4.3.0" />
+            </package>
+            <package id="org.osgi.service.dmt.spi">
+                <version id="2.0" spec="7.0.0" />
+                <version id="2.0" spec="6.0.0" />
+                <version id="2.0" spec="5.0.0" />
+                <version id="2.0" spec="4.3.0" />
+            </package>
+            <package id="org.osgi.service.dmt.notification">
+                <version id="2.0" spec="7.0.0" />
+                <version id="2.0" spec="6.0.0" />
+                <version id="2.0" spec="5.0.0" />
+                <version id="2.0" spec="4.3.0" />
+            </package>
+            <package id="org.osgi.service.dmt.notification.spi">
+                <version id="2.0" spec="7.0.0" />
+                <version id="2.0" spec="6.0.0" />
+                <version id="2.0" spec="5.0.0" />
+                <version id="2.0" spec="4.3.0" />
+            </package>
+            <package id="org.osgi.service.dmt.security">
+                <version id="2.0" spec="7.0.0" />
+                <version id="2.0" spec="6.0.0" />
+                <version id="2.0" spec="5.0.0" />
+                <version id="2.0" spec="4.3.0" />
+            </package>
+            <package id="info.dmtree">
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+            </package>
+            <package id="info.dmtree.notification">
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+            </package>
+            <package id="info.dmtree.notification.spi">
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+            </package>
+            <package id="info.dmtree.registry">
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+            </package>
+            <package id="info.dmtree.security">
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+            </package>
+            <package id="info.dmtree.spi">
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+            </package>
+        </item>
+        <item number="119" title="Monitor Admin Service Specification">
+            <description>This specification outlines how a bundle can publish Status Variables and how administrative bundles can discover Status Variables as well as read and reset their values.</description>
+            <package id="org.osgi.service.monitor">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+            </package>
+        </item>
+        <item number="120" title="Foreign Application Access Specification">
+            <description>The purpose of this specification is to enable foreign applications to participate in the OSGi service oriented architecture.</description>
+            <package id="org.osgi.application">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+            </package>
+        </item>
+        <item number="121" title="Blueprint Container Specification">
+            <description>This specification defines a dependency injection framework, specifically for OSGi bundles, that understands the unique dynamic nature of services.</description>
+            <package id="org.osgi.service.blueprint.container">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+            </package>
+            <package id="org.osgi.service.blueprint.reflect">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+            </package>
+        </item>
+        <item number="122" title="Remote Service Admin Service Specification">
+            <description>The basic model for OSGi remote services is that a bundle can register services that are exported to a communication Endpoint and use services that are imported from a communication Endpoint.</description>
+            <package id="org.osgi.service.remoteserviceadmin">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+            </package>
+            <package id="org.osgi.service.remoteserviceadmin.namespace">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+        </item>
+        <item number="123" title="JTA Transaction Services Specification">
+            <description>This specification provides an OSGi service based design for the Java Transaction Architecture (JTA) Specification.</description>
+            <notes>
+                <note>JTA Transaction Services Specification is introduced in OSGi Compendium 4.3, but doesn't specify any packages.</note>
+            </notes>
+        </item>
+        <item number="125" title="JDBC Service Specification">
+            <description>This specification defines how OSGi-aware JDBC drivers can provide access to their implementations.</description>
+            <package id="org.osgi.service.jdbc">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+            </package>
+        </item>
+        <item number="126" title="JNDI Services Specification">
+            <description>This specification will define how JNDI can be utilized from within an OSGi framework.</description>
+            <package id="org.osgi.service.jndi">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+            </package>
+        </item>
+        <item number="127" title="JPA Service Specification">
+            <description>This specification is about the unmanaged model of JPA except in the areas where the managed model is explicitly mentioned.</description>
+            <package id="org.osgi.service.jpa">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+            </package>
+            <package id="org.osgi.service.jpa.annotations">
+                <version id="1.1" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="128" title="Web Applications Specification">
+            <description>This specification defines the Web Application Bundle, which is a bundle that performs the same role as the WAR in Java EE.</description>
+            <notes>
+                <note>Web Applications Specification is introduced in OSGi Compendium 4.3, but doesn't specify any packages.</note>
+            </notes>
+        </item>
+        <item number="129" title="SCA Configuration Type Specification">
+            <description>This specification is based on the SCA Assembly specification v1.1 CD03 and SCA Policy Framework specification v1.1 CD02.</description>
+            <notes>
+                <note>SCA Configuration Type Specification is introduced in OSGi Compendium 4.3, but doesn't specify any packages.</note>
+                <note>SCA Configuration Type Specification is removed in 5.0.0.</note>
+            </notes>
+        </item>
+        <item number="130" title="Coordinator Service Specification">
+            <description>This Coordinator service provides an explicit Coordination model, the Coordination is explicitly passed as a parameter, and an implicit model where the Coordination is associated with the current thread.</description>
+            <package id="org.osgi.service.coordinator">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+            </package>
+        </item>
+        <item number="132" title="Repository Service Specification">
+            <description>This Repository Service Specification provides the capability to manage the external access to components and other resources.</description>
+            <package id="org.osgi.service.repository">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+            </package>
+        </item>
+        <item number="133" title="Service Loader Mediator Specification">
+            <description>This specification defines a mediator that ensures that the JavaSE 6+ Service Loader is useful in an OSGi Framework.</description>
+            <package id="org.osgi.service.serviceloader">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+            </package>
+        </item>
+        <item number="134" title="Subsystem Service Specification">
+            <description>The Subsystems specification defines resolution and provisioning rules to help management agents consistently deploy collections of resources.</description>
+            <package id="org.osgi.service.subsystem">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.1" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+            </package>
+        </item>
+        <item number="135" title="Common Namespaces Specification">
+            <description>This section defines a number of Namespaces that are not part of the OSGi Core Release 5 specification.</description>
+            <package id="org.osgi.namespace.contract">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+            </package>
+            <package id="org.osgi.namespace.extender">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+            </package>
+            <package id="org.osgi.namespace.service">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+            </package>
+            <package id="org.osgi.namespace.implementation">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.namespace.unresolvable">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="137" title="REST Management Service Specification">
+            <description>This specification describes a REST interface for framework management, client-side Java and JavaScript APIs, and an extension mechanism through which other bundles can contribute their own RESTful management APIs and make them discoverable by clients.</description>
+            <package id="org.osgi.service.rest">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.service.rest.client">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+        </item>
+        <item number="138" title="Asynchronous Service Specification">
+            <description>The purpose of the Asynchronous Service is to bridge the gap between these existing, primarily synchronous, services in the OSGi service registry, and asynchronous programming.</description>
+            <package id="org.osgi.service.async">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.service.async.delegate">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+        </item>
+        <item number="140" title="Http Whiteboard Specification">
+            <description>OSGi Http Whiteboard Specification provides a light and convenient way of using servlets, servlet filters, servlet listeners and web resources in an OSGi environment through the use of the Whiteboard Pattern.</description>
+            <package id="org.osgi.service.http.context">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.service.http.runtime">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.service.http.runtime.dto">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.service.http.whiteboard">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.service.http.whiteboard.annotations">
+                <version id="1.1" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.http.whiteboard.propertytypes">
+                <version id="1.1" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="147" title="Transaction Control Service Specification">
+            <description>The purpose of the Transaction Control Service is to enable a portable, modular abstraction for Transaction lifecycle management and to allow different resource types to be easily used within a Transaction.</description>
+            <package id="org.osgi.service.transaction.control">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.transaction.control.jdbc">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.transaction.control.jpa">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.transaction.control.recovery">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="148" title="Cluster Information Specification">
+            <description>An API for a management agent to discover, list and inspect available nodes in the cluster.</description>
+            <package id="org.osgi.service.clusterinfo">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.clusterinfo.dto">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="150" title="Configurator Specification">
+            <description>This specification defines a mechanism to feed configurations into the Configuration Admin Service through configuration resources.</description>
+            <package id="org.osgi.service.configurator">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.configurator.annotations">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.configurator.namespace">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="151" title="JAX-RS Whiteboard Specification">
+            <description>The OSGi JAX-RS Whiteboard Specification provides a light and convenient way of using JAX-RS POJOs, applications and extensions in an OSGi environment through the use of the Whiteboard Pattern.</description>
+            <package id="org.osgi.service.jaxrs.client">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.jaxrs.runtime">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.jaxrs.runtime.dto">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.jaxrs.whiteboard">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.jaxrs.whiteboard.annotations">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+            <package id="org.osgi.service.jaxrs.whiteboard.propertytypes">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="702" title="XML Parser Service Specification">
+            <description>A common XML Parser in an embedded environment.</description>
+            <package id="org.osgi.util.xml">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+                <version id="1.0" spec="4.0.1" />
+                <version id="1.0" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.util.xml` package is specified in chapter 17 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="703" title="Position Specification">
+            <description>The Position class is a utility providing bundle developers with a consistent way of handling geographic positions in OSGi applications.</description>
+            <package id="org.osgi.util.position">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+                <version id="1.0" spec="4.0.1" />
+                <version id="1.0" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.util.position` package is specified in chapter 21 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="704" title="Measurement and State Specification">
+            <description>The Measurement class is a utility that provides a consistent way of handling a diverse range of measurements for bundle developers.</description>
+            <package id="org.osgi.util.measurement">
+                <version id="1.0" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+                <version id="1.0" spec="5.0.0" />
+                <version id="1.0" spec="4.3.0" />
+                <version id="1.0" spec="4.2.0" />
+                <version id="1.0" spec="4.1.0" />
+                <version id="1.0" spec="4.0.1" />
+                <version id="1.0" spec="4.0.0" />
+                <version id="1.0" spec="3.0.0">
+                    <note>In 3.0.0 specification, `org.osgi.util.measurement` package is specified in chapter 20 of core specification</note>
+                </version>
+            </package>
+        </item>
+        <item number="705" title="Promises Specification">
+            <description>This specification defines a Promises API which can be used on many versions of Java including Java 5 and Java ME CDC/Foundation.</description>
+            <package id="org.osgi.util.promise">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+            <package id="org.osgi.util.function">
+                <version id="1.1" spec="7.0.0" />
+                <version id="1.0" spec="6.0.0" />
+            </package>
+        </item>
+        <item number="706" title="Push Stream Specification">
+            <description>This specification defines a PushStream API which can be used on devices which support the Java 8 compact profile.</description>
+            <package id="org.osgi.util.pushstream">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+        </item>
+        <item number="707" title="Converter Specification">
+            <description>This specification defines the OSGi Converter that makes it easy to convert many types to other types, including scalars, Collections, Maps, Beans, Interfaces and DTOs without having to write the boilerplate conversion code.</description>
+            <package id="org.osgi.util.converter">
+                <version id="1.0" spec="7.0.0" />
+            </package>
+        </item>
+    </spec>
+
+</specifications>

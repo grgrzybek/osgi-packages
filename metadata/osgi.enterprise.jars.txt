@@ -17,6 +17,8 @@
 # under the License.
 #
 
+# all OSGi Enterprise Maven artifacts (groupId/artifactId/version) I've found in Maven Central
+
 org.osgi/org.osgi.enterprise/4.2.0
 org.osgi/org.osgi.enterprise/5.0.0
 org.osgi/osgi.enterprise/5.0.0

@@ -17,6 +17,8 @@
 # under the License.
 #
 
+# all OSGi Core Maven artifacts (groupId/artifactId/version) I've found in Maven Central
+
 org.osgi/osgi_R4_core/1.0
 org.osgi/org.osgi/2.0.0
 org.osgi/org.osgi/3.0.0
