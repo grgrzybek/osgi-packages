@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<osgi-packages xmlns="https://github.com/grgrzybek/osgi-packages/1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://github.com/grgrzybek/osgi-packages/1 osgi-packages.xsd"
+        base="https://repo1.maven.org/maven2/org/osgi/">
+
+    <jars specification="core">
+        <jar groupId="org.osgi" artifactId="osgi_R4_core">
+            <version version="1.0" />
+        </jar>
+
+        <jar groupId="org.osgi" artifactId="org.osgi">
+            <version version="2.0.0" />
+            <version version="3.0.0" />
+        </jar>
+
+        <jar groupId="org.osgi" artifactId="core">
+            <version version="4.3.0" />
+        </jar>
+
+        <jar groupId="org.osgi" artifactId="org.osgi.core">
+            <version version="4.0.0" />
+            <version version="4.0.1" />
+            <version version="4.1.0" />
+            <version version="4.2.0" />
+            <version version="4.3.0" />
+            <version version="4.3.1" />
+            <version version="5.0.0" />
+            <version version="6.0.0" />
+        </jar>
+
+        <jar groupId="org.osgi" artifactId="osgi.core">
+            <version version="4.3.1" />
+            <version version="5.0.0" />
+            <version version="6.0.0" />
+            <version version="7.0.0" />
+        </jar>
+    </jars>
+
+    <jars specification="cmpn">
+        <jar groupId="org.osgi" artifactId="osgi_R4_compendium">
+            <version version="1.0" />
+        </jar>
+
+        <jar groupId="org.osgi" artifactId="org.osgi.compendium">
+            <version version="4.0.0" />
+            <version version="4.0.1" />
+            <version version="4.1.0" />
+            <version version="4.2.0" />
+            <version version="4.3.0" />
+            <version version="4.3.1" />
+            <version version="5.0.0" />
+        </jar>
+
+        <jar groupId="org.osgi" artifactId="osgi.cmpn">
+            <version version="4.3.1" />
+            <version version="5.0.0" />
+            <version version="6.0.0" />
+            <version version="7.0.0" />
+        </jar>
+    </jars>
+
+    <jars specification="enterprise">
+        <jar groupId="org.osgi" artifactId="org.osgi.enterprise">
+            <version version="4.2.0" />
+            <version version="5.0.0" />
+        </jar>
+
+        <jar groupId="org.osgi" artifactId="osgi.enterprise">
+            <version version="5.0.0" />
+            <version version="6.0.0" />
+        </jar>
+    </jars>
+
+    <packages specification="core">
+        <package name="org.osgi">
+            <package name="dto" />
+            <package name="framework">
+                <package name="dto" />
+                <package name="hooks">
+                    <package name="bundle" />
+                    <package name="resolver" />
+                    <package name="service" />
+                    <package name="weaving" />
+                </package>
+                <package name="launch" />
+                <package name="namespace" />
+                <package name="startlevel">
+                    <package name="dto" />
+                </package>
+                <package name="wiring">
+                    <package name="dto" />
+                </package>
+            </package>
+            <package name="resource">
+                <package name="dto" />
+            </package>
+            <package name="service">
+                <package name="condpermadmin" />
+                <package name="packageadmin" />
+                <package name="permissionadmin" />
+                <package name="resolver" />
+                <package name="startlevel" />
+                <package name="url" />
+            </package>
+            <package name="util.tracker" />
+        </package>
+    </packages>
+
+    <packages specification="cmpn">
+        <package name="org.osgi">
+            <package name="application" />
+            <package name="namespace">
+                <package name="contract" />
+                <package name="extender" />
+                <package name="implementation" />
+                <package name="service" />
+                <package name="unresolvable" />
+            </package>
+            <package name="resource">
+                <package name="dto" />
+            </package>
+            <package name="service">
+                <package name="application" />
+                <package name="async">
+                    <package name="delegate" />
+                </package>
+                <package name="blueprint">
+                    <package name="container" />
+                    <package name="reflect" />
+                </package>
+                <package name="cm">
+                    <package name="annotations" />
+                </package>
+                <package name="component">
+                    <package name="annotations" />
+                    <package name="propertytypes" />
+                    <package name="runtime">
+                        <package name="dto" />
+                    </package>
+                </package>
+                <package name="configurator">
+                    <package name="annotations" />
+                    <package name="namespace" />
+                </package>
+                <package name="coordinator" />
+                <package name="deploymentadmin">
+                    <package name="spi" />
+                </package>
+                <package name="device" />
+                <package name="dmt">
+                    <package name="notification">
+                        <package name="spi" />
+                    </package>
+                    <package name="security" />
+                    <package name="spi" />
+                </package>
+                <package name="event">
+                    <package name="annotations" />
+                    <package name="propertytypes" />
+                </package>
+                <package name="http">
+                    <package name="context" />
+                    <package name="runtime">
+                        <package name="dto" />
+                    </package>
+                    <package name="whiteboard">
+                        <package name="annotations" />
+                        <package name="propertytypes" />
+                    </package>
+                </package>
+                <package name="io" />
+                <package name="jaxrs">
+                    <package name="client" />
+                    <package name="runtime">
+                        <package name="dto" />
+                    </package>
+                    <package name="whiteboard">
+                        <package name="annotations" />
+                        <package name="propertytypes" />
+                    </package>
+                </package>
+                <package name="jdbc" />
+                <package name="jndi" />
+                <package name="jpa">
+                    <package name="annotations" />
+                </package>
+                <package name="log">
+                    <package name="admin" />
+                    <package name="stream" />
+                </package>
+                <package name="metatype">
+                    <package name="annotations" />
+                </package>
+                <package name="monitor" />
+                <package name="prefs" />
+                <package name="provisioning" />
+                <package name="remoteserviceadmin">
+                    <package name="namespace" />
+                </package>
+                <package name="repository" />
+                <package name="rest">
+                    <package name="client" />
+                </package>
+                <package name="serviceloader" />
+                <package name="subsystem" />
+                <package name="transaction.control">
+                    <package name="jdbc" />
+                    <package name="jpa" />
+                    <package name="recovery" />
+                </package>
+                <package name="upnp" />
+                <package name="useradmin" />
+                <package name="wireadmin" />
+            </package>
+            <package name="util">
+                <package name="converter" />
+                <package name="function" />
+                <package name="measurement" />
+                <package name="position" />
+                <package name="promise" />
+                <package name="pushstream" />
+                <package name="xml" />
+            </package>
+        </package>
+    </packages>
+
+</osgi-packages>
